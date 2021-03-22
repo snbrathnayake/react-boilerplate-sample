@@ -1,0 +1,16 @@
+/*---------------------------------------------------
+            FONT ROBOTO  FAMILY
+---------------------------------------------------*/
+@font-face {
+    font-family: 'Roboto Thin';
+    src: url('../fonts/roboto/Roboto-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('../fonts/roboto/Roboto-Light.ttf') format('truetype');
+}
+
+// Variables
+$font-thin: 'Roboto Thin';
+$font-light: 'Roboto Light';

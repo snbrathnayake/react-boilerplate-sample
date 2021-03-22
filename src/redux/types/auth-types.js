@@ -1,0 +1,4 @@
+export const LOAD_AUTH = 'LOAD_AUTH';
+export const LOADED_AUTH = 'LOAD_AUTH';
+export const UPDATE_LOGGED_USER_INFO = 'UPDATE_LOGGED_USER_INFO';
+export const CLEAR_USER_INFO = 'CLEAR_USER_INFO';
