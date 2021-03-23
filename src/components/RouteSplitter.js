@@ -4,7 +4,7 @@ import { Route, Redirect } from 'react-router-dom';
 function RouteSplitter(props) {
 
     const { component: Component, location, routes = [], redirect, ...rest } = props;
-    
+
     if (redirect) {
         const to = {
             pathname: location.pathname.replace(props.from, props.to),
@@ -26,7 +26,7 @@ function RouteSplitter(props) {
                 )
             }}
         />
-    )
+    );
 
 };
 

@@ -1,6 +1,8 @@
+@import 'styles/colors';
+
 div {
-    padding: 5px;
-    font-size: 1.5rem;
-    color: #222;
+    padding: 0px;
     text-transform: uppercase;
+    // @extend .color-plt
+    color: $secondary-black;
 }

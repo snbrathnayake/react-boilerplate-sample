@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Root from 'components/Root';
-import { configureStore, history } from 'redux/store/configureStore';
-import 'styles/main.scss';
 
+import { configureStore, history } from 'redux/store/configureStore';
+import Root from 'components/Root';
+import 'styles/main.scss';
+// import '~/fonts/fonts.scss';
+// import '~/fonts/color.scss';
 
 const { store } = configureStore() || {}
 
