@@ -7,8 +7,6 @@ const CaptureRouteNotFound = props => {
     const { state = {} } = location;
     const { notFoundError } = state;
 
-    console.log(location)
-
     return notFoundError ? (
         <div>
             <div className="flex flex--content justify-content--center">

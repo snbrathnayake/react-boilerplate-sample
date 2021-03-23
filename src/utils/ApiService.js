@@ -15,9 +15,10 @@ export const instance = axios.create({
 });
 
 export function formatUrl(path) {
-    if (path.startsWith('http') || path.startsWith('https')) {
-        return path;
-    }
+    // if (path.startsWith('http') || path.startsWith('https')) {
+    //     return path;
+    // }
+    return path;
 }
 
 let errorHandler = (err, request) => {
@@ -31,7 +32,7 @@ let errorHandler = (err, request) => {
         });*/
     }
 
-    ErrorService.capture(err, { err });
+    // ErrorService.capture(err, { err });
     return err;
 };
 

@@ -1,5 +1,6 @@
 export const ApiConstants = {
-	BASE_URL: process.env.APP_API_URL
+	BASE_URL: process.env.REACT_APP_API_URL,
+	ENVIRONMENT: process.env.REACT_APP_ENVIRONMENT,
 }
 
 /*
