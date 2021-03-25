@@ -1,7 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import './styles.scss';
+import { ROUTES } from 'constants/route-constants';
 import { fetchComments } from "redux/actions/commentAction";
 
 class Home extends React.Component {
@@ -13,8 +15,9 @@ class Home extends React.Component {
         }
     }
 
-    componentDidMount() { 
-        this.loadAll()
+    componentDidMount() {
+        // throw new Error("Hello Error");
+        this.loadAll();
     }
 
     loadAll = () => {
@@ -23,18 +26,17 @@ class Home extends React.Component {
 
     render() {
         const { data } = this.props;
-
         return (
             <div>
+                <Link to={ROUTES.DASHBOADRD}>Admin</Link>
                 <h3>Welcome to Home</h3>
                 <button onClick={this.loadAll}>LOAD</button>
                 <div className="result-box">
                     {
-                        data.comments.map(((data, idx) => ( 
-                        <div className="row">
-                            <span>{data.id}</span> - {data.name}
-                            <hr/>
-                        </div> 
+                        data.comments.map(((data, idx) => (
+                            <div className="row" key={idx}>
+                                <span >{data.id}</span> - {data.name}
+                            </div>
                         )))
                     }
                 </div>

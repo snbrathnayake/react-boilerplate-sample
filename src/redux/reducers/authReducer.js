@@ -1,6 +1,7 @@
 import * as types from 'redux/types/auth-types';
 
 const defaultState = {
+    auth:{},
     isLoggedIn: false
 };
 
@@ -10,7 +11,7 @@ const authReducer = (state = defaultState, action) => {
         case types.LOADED_AUTH:
             return {
                 ...state,
-                step: action.payload
+                auth: action.payload
             };
 
         default:

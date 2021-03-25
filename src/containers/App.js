@@ -24,11 +24,11 @@ class App extends React.Component {
       <Fragment>
         <ErrorBoundary>
           <Router>
-            <Navbar />
             <CaptureRouteNotFound>
+              <Navbar />
               <Switch children={renderRoutesInPath(routes)} />
+              <AppFooter />
             </CaptureRouteNotFound>
-            <AppFooter />
           </Router>
         </ErrorBoundary>
         {/* <LatesEvent/>

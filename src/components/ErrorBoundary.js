@@ -29,10 +29,11 @@ class ErrorBoundary extends Component {
                 Please try again or with the error code below if the issue persists.
             </div>
         );
+
         const { errorInfo } = this.state;
         if (errorInfo) {
             return (
-                <div>
+                <div className="error-boundary-wizard">
                     <GenericError
                         errorMessage={errorMessage}
                         errorId={this.state.errorId}>
@@ -40,8 +41,10 @@ class ErrorBoundary extends Component {
                     </GenericError>
                 </div>
             );
-        };
-        return this.props.children;
+        } else {
+            return this.props.children;
+        }
+    
     }
 };
 
